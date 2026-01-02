@@ -27,14 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MinimalFolio
-  * Template URL: https://bootstrapmade.com/minimalfolio-bootstrap-portfolio-template/
-  * Updated: Aug 05 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -43,9 +35,8 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">MinimalFolio</h1>
+        <!-- Keep only one h1 on the page: hero h1 -->
+        <span class="sitename">MinimalFolio</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -55,10 +46,12 @@
           <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown">
+            <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown">
+                <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -130,13 +123,15 @@
 
           <div class="col-lg-5">
             <figure class="portrait-wrap position-relative" data-aos="fade-left" data-aos-delay="200">
-              <img src="assets/img/profile 1.jpeg" alt="Profile Portrait" class="img-fluid portrait-img">
-              <figcaption class="visually-hidden">Minimal portrait preview</figcaption>
+              <img src="assets/img/profile-1.jpeg" alt="Profile Portrait" class="img-fluid portrait-img">
 
               <div class="badge note" data-aos="zoom-in" data-aos-delay="300">
                 <i class="bi bi-star"></i>
                 <span>10+ yrs building elegant UIs</span>
               </div>
+
+              <!-- figcaption must be first or last inside figure -->
+              <figcaption class="visually-hidden">Minimal portrait preview</figcaption>
             </figure>
           </div>
 
@@ -177,22 +172,22 @@
           </div>
 
           <div class="col-lg-5">
-            <img width="400px" height="400pxs" src="assets/img/profile 1.jpeg" alt="Profile Image" class="img-fluid rounded-3 shadow">
+            <!-- width/height must be digits only (or remove them) -->
+            <img width="400" height="400" src="assets/img/profile-1.jpeg" alt="Profile Image" class="img-fluid rounded-3 shadow">
           </div>
         </div>
 
       </div>
     </section>
-<!-- /About Section -->
+    <!-- /About Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -235,7 +230,7 @@
               </div>
             </article>
           </div>
-        </div><!-- End Skill Row 1 -->
+        </div>
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
@@ -276,7 +271,7 @@
               </div>
             </article>
           </div>
-        </div><!-- End Skill Row 2 -->
+        </div>
 
         <div class="row gx-5 gy-4 mt-5 align-items-center alt-grid">
           <div class="col-lg-5 order-lg-2" data-aos="fade-left" data-aos-delay="150">
@@ -336,7 +331,6 @@
 
         <div class="resume-content">
 
-          <!-- EXPERIENCE -->
           <h3 class="mb-4">Work Experience</h3>
 
           <div class="resume-item" data-aos="fade-up">
@@ -350,15 +344,13 @@
             </p>
           </div>
 
-          <!-- EDUCATION -->
           <h3 class="mt-5 mb-4">Education</h3>
 
           <div class="resume-item" data-aos="fade-up">
             <h4>Bachelor's Degree in Computer Engineering</h4>
             <h5>Vilnius Gediminas Technical University (VILNIUS TECH)</h5>
             <span class="period">2024 – Present</span>
-            <p>Currently studying Computer Engineering with a focus on computer systems, programming, and engineering
-              fundamentals.</p>
+            <p>Currently studying Computer Engineering with a focus on computer systems, programming, and engineering fundamentals.</p>
           </div>
 
           <div class="resume-item" data-aos="fade-up">
@@ -372,7 +364,7 @@
       </div>
 
     </section>
-<!-- /Resume Section -->
+    <!-- /Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -385,10 +377,9 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 portfolio-grid">
 
-          <!-- Project 1 -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-card">
-              <img width="400px" height="400px" src="assets/img/profile 2.jpeg" class="img-fluid" alt="Project 1">
+              <img width="400" height="400" src="assets/img/profile-2.jpeg" class="img-fluid" alt="Project 1">
               <div class="content">
                 <h3>Basic Website Project</h3>
                 <p>A simple multi-page website created as a practice project using HTML, CSS, and basic JavaScript.</p>
@@ -396,10 +387,9 @@
             </div>
           </div>
 
-          <!-- Project 2 -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-card">
-              <img width="400px" height="400px" src="assets/img/profile 3.jpeg" class="img-fluid" alt="Project 2">
+              <img width="400" height="400" src="assets/img/profile-3.jpeg" class="img-fluid" alt="Project 2">
               <div class="content">
                 <h3>Inventory Tracking Concept</h3>
                 <p>A small system prototype inspired by my cargo company experience — designed to log and update inventory entries.</p>
@@ -407,10 +397,9 @@
             </div>
           </div>
 
-          <!-- Project 3 -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-design">
             <div class="portfolio-card">
-              <img  width="400px" height="400px" src="assets/img/profile 4.jpeg" class="img-fluid" alt="Project 3">
+              <img width="400" height="400" src="assets/img/profile-4.jpeg" class="img-fluid" alt="Project 3">
               <div class="content">
                 <h3>Personal Portfolio Layout</h3>
                 <p>A modern portfolio design built for practicing UI structure, typography, and responsive layouts.</p>
@@ -421,10 +410,11 @@
         </div>
       </div>
     </section>
-<!-- /Portfolio Section -->
+    <!-- /Portfolio Section -->
+
     <!-- =======================
-     SERVICES SECTION
-======================= -->
+     SERVICES SECTION (media)
+    ======================= -->
     <section id="services" class="services section">
 
       <div class="container section-title" data-aos="fade-up">
@@ -436,40 +426,38 @@
 
         <div class="row gy-5">
 
-          <!-- Service 1 -->
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
               <h3>Web Development</h3>
               <p>I build responsive and modern websites using HTML, CSS, JavaScript, and frontend frameworks.</p>
 
-              <!-- Local Video Example -->
-              <!-- Place your video in: assets/video/my-video.mp4 -->
-              <video width="400px" height="400px" controls>
+              <video width="400" height="400" controls>
                 <source src="assets/media/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </div>
           </div>
 
-          <!-- Service 2 -->
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
               <h3>YouTube Tutorials</h3>
               <p>I create helpful tutorials for web technologies and programming fundamentals.</p>
 
-              <!-- YouTube Embedded Video -->
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/SCYFuhrnpAU?si=3uRXaa2vBR6_0J-t" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/SCYFuhrnpAU?si=3uRXaa2vBR6_0J-t"
+                title="YouTube video player"
+                style="border:0;"
+                allowfullscreen></iframe>
             </div>
           </div>
 
-          <!-- Service 3 -->
           <div class="col-lg-4 col-md-6">
             <div class="service-item">
               <h3>Audio Production</h3>
               <p>I also record podcasts and audio notes related to technology and productivity.</p>
 
-              <!-- Audio File Example -->
-              <!-- Place your audio in: assets/audio/my-audio.mp3 -->
               <audio controls style="width:100%;">
                 <source src="assets/media/audio.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -483,14 +471,12 @@
 
     </section>
 
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
@@ -575,14 +561,14 @@
       </div>
     </section><!-- /Testimonials Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- Services Section (template one) -->
+    <!-- Renamed ID to avoid duplicate "services" -->
+    <section id="services-alt" class="services section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -602,7 +588,7 @@
                 </a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="service-item">
@@ -618,7 +604,7 @@
                 </a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
@@ -634,7 +620,7 @@
                 </a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item">
@@ -650,7 +636,7 @@
                 </a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
             <div class="service-item">
@@ -666,7 +652,7 @@
                 </a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
@@ -682,7 +668,7 @@
                 </a>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
 
@@ -693,11 +679,10 @@
     <!-- Faq Section -->
     <section id="faq" class="faq section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -709,7 +694,8 @@
               <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="150">
                 <div class="faq-header">
                   <span class="faq-number">01</span>
-                  <h3>Donec sollicitudin molestie malesuada proin eget tortor?</h3>
+                  <!-- h2 -> h3 (no skipping) -->
+                  <h3 class="faq-question">Donec sollicitudin molestie malesuada proin eget tortor?</h3>
                   <div class="faq-toggle">
                     <i class="bi bi-plus"></i>
                     <i class="bi bi-dash"></i>
@@ -720,12 +706,12 @@
                     <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div>
 
               <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="faq-header">
                   <span class="faq-number">02</span>
-                  <h3>Sed porttitor lectus nibh vivamus magna justo?</h3>
+                  <h3 class="faq-question">Sed porttitor lectus nibh vivamus magna justo?</h3>
                   <div class="faq-toggle">
                     <i class="bi bi-plus"></i>
                     <i class="bi bi-dash"></i>
@@ -736,12 +722,12 @@
                     <p>Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div>
 
               <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
                 <div class="faq-header">
                   <span class="faq-number">03</span>
-                  <h3>Pellentesque habitant morbi tristique senectus?</h3>
+                  <h3 class="faq-question">Pellentesque habitant morbi tristique senectus?</h3>
                   <div class="faq-toggle">
                     <i class="bi bi-plus"></i>
                     <i class="bi bi-dash"></i>
@@ -752,12 +738,12 @@
                     <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada.</p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div>
 
               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="faq-header">
                   <span class="faq-number">04</span>
-                  <h3>Lorem ipsum dolor sit amet consectetur adipiscing?</h3>
+                  <h3 class="faq-question">Lorem ipsum dolor sit amet consectetur adipiscing?</h3>
                   <div class="faq-toggle">
                     <i class="bi bi-plus"></i>
                     <i class="bi bi-dash"></i>
@@ -768,12 +754,12 @@
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div>
 
               <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
                 <div class="faq-header">
                   <span class="faq-number">05</span>
-                  <h3>Curabitur aliquet quam id dui posuere blandit?</h3>
+                  <h3 class="faq-question">Curabitur aliquet quam id dui posuere blandit?</h3>
                   <div class="faq-toggle">
                     <i class="bi bi-plus"></i>
                     <i class="bi bi-dash"></i>
@@ -784,7 +770,7 @@
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.</p>
                   </div>
                 </div>
-              </div><!-- End FAQ Item -->
+              </div>
 
             </div>
 
@@ -797,11 +783,10 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-stretch">
@@ -817,31 +802,31 @@
                   <div class="col-md-6">
                     <div class="form-field">
                       <input type="text" id="userName" class="form-input" placeholder="Name">
-                      <label class="field-label">Name</label>
+                      <label class="field-label" for="userName">Name</label>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="form-field">
                       <input type="text" id="userSurname" class="form-input" placeholder="Surname">
-                      <label class="field-label">Surname</label>
+                      <label class="field-label" for="userSurname">Surname</label>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-field">
                   <input type="email" id="userEmail" class="form-input" placeholder="Email">
-                  <label class="field-label">Email</label>
+                  <label class="field-label" for="userEmail">Email</label>
                 </div>
 
                 <div class="form-field">
                   <input type="tel" id="userPhone" class="form-input" placeholder="+370 6xx xxxxx">
-                  <label class="field-label">Phone</label>
+                  <label class="field-label" for="userPhone">Phone</label>
                 </div>
 
                 <div class="form-field">
                   <input type="text" id="userAddress" class="form-input" placeholder="Address">
-                  <label class="field-label">Address</label>
+                  <label class="field-label" for="userAddress">Address</label>
                 </div>
 
                 <div class="row">
@@ -918,16 +903,16 @@
               <div class="connect-section" data-aos="fade-up" data-aos-delay="550">
                 <span class="connect-label">Connect with us</span>
                 <div class="social-links">
-                  <a href="#" class="social-link">
+                  <a href="#" class="social-link" aria-label="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                   </a>
-                  <a href="#" class="social-link">
+                  <a href="#" class="social-link" aria-label="Twitter">
                     <i class="bi bi-twitter-x"></i>
                   </a>
-                  <a href="#" class="social-link">
+                  <a href="#" class="social-link" aria-label="Instagram">
                     <i class="bi bi-instagram"></i>
                   </a>
-                  <a href="#" class="social-link">
+                  <a href="#" class="social-link" aria-label="Facebook">
                     <i class="bi bi-facebook"></i>
                   </a>
                 </div>
@@ -971,26 +956,20 @@
   </main>
 
   <footer id="footer" class="footer">
-
     <div class="container">
       <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">MinimalFolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
